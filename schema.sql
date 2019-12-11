@@ -3,22 +3,28 @@ CREATE DATABASE employee_tracker_db;
 USE employee_tracker_db;
 
 CREATE TABLE employee (
-    ID int NOT NULL PRIMARY KEY,
-    first_name varchar(30) NOT NULL,
-    last_name varchar(30) NOT NULL,
-    role_id int NOT NULL,
-    manager_id int
+    ID INT NOT NULL AUTO_INCREMENT,
+    first_name VARCHAR(30) NOT NULL,
+    last_name VARCHAR(30) NOT NULL,
+    role_id INT NOT NULL,
+    manager_id INT,
+    PRIMARY KEY (id)
 );
 
-CREATE TABLE employee_role (
-    ID int NOT NULL PRIMARY KEY,
-    title varchar(30) NOT NULL,
-    salary decimal NOT NULL,
-    department_id int NOT NULL
+CREATE TABLE role (
+    ID INT NOT NULL AUTO_INCREMENT,
+    title VARCHAR(30) NOT NULL,
+    salary DECIMAL NOT NULL,
+    department_id INT NOT NULL,
+    PRIMARY KEY (id)
 );
 
 CREATE TABLE department (
-    ID int NOT NULL PRIMARY KEY,
-    dept_name varchar(30) NOT NULL,
+    ID INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(30) NOT NULL,
+    PRIMARY KEY (id)
 );
 
+SELECT * FROM employee;
+SELECT * FROM role;
+SELECT * FROM department;
