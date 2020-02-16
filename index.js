@@ -180,7 +180,7 @@ function updateEmployeeRole() {
 
 }
 function removeEmployee(employee) {
-  connection.query("DELETE * From employees where first_name='Brennan'", function (err, results) {
+  connection.query("DELETE * From employees where first_name='John'", function (err, results) {
       if (err) throw err;
       start();
   })
@@ -193,7 +193,7 @@ function updateEmployeeRole() {
           .prompt({
               name: "employeeRole",
               type: "list",
-              message: "Select the employee whose role you would like to update",
+              message: "Please select employee whose role you would like to update",
               choices: function () {
                   var employeeArray = [];
                   for (var i = 0; i < results.length; i++) {
