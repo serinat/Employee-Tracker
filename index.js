@@ -79,7 +79,7 @@ function viewEmployeeByDepartment() {
             .prompt({
                 name: "selectDepartment",
                 type: "list",
-                message: "Select which department you would like to view.",
+                message: "Please select department to view.",
                 choices: ["Sales", "Engineering", "Management"]
 
             })
