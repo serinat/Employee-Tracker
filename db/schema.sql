@@ -29,4 +29,4 @@ CREATE TABLE employees (
 );
 
 insert employees(first_name, last_name, role, role_id, manager_id)
-values ("Mike", "Chan", "Lead Engineer", 2, 1);
+values ("Mike", "Chan", "Lead Engineer", 1, 1);

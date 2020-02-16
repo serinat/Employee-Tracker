@@ -1,6 +1,6 @@
 const mysql = require("mysql");
 const inquirer = require("inquirer");
-require("console.table");
+//require("console.table");
 // const sql = require("./sql");
 
 var connection = mysql.createConnection({
@@ -175,10 +175,7 @@ function selectRemoveEmployee() {
 
 }
 
-function updateEmployeeRole() {
-  employeeArray();
 
-}
 function removeEmployee(employee) {
   connection.query("DELETE * From employees where first_name='John'", function (err, results) {
       if (err) throw err;
@@ -187,7 +184,7 @@ function removeEmployee(employee) {
 
 }
 function updateEmployeeRole() {
-  connection.query("UPDATE FROM emplpyees", function (err, results) {
+  connection.query("UPDATE FROM employees", function (err, results) {
       if (err) throw err;
       inquirer
           .prompt({
