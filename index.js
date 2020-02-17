@@ -71,7 +71,7 @@ function viewAllEmployees() {
 //View All Employees by Department
 
 function viewEmployeeByDepartment() {
-  var query = "select * from employees inner join role on employees.role_id WHERE employees.role_id = 1";
+  var query = "SELECT * FROM employees inner join role on employees.role_id WHERE employees.role_id = 1";
     connection.query(query, function (err, results) {
         if (err) throw (err);
 
@@ -177,7 +177,7 @@ function selectRemoveEmployee() {
 
 
 function removeEmployee(employee) {
-  connection.query("DELETE FROM employees where first_name='Serina'", function (err, results) {
+  connection.query("DELETE FROM employees WHERE first_name='?'", function (err, results) {
       if (err) throw err;
       start();
   })
