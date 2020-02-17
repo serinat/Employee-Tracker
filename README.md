@@ -7,6 +7,7 @@
 - The objective of this homework is to build a command-line application that allows users to add and view departments, roles and employees and to update employee roles.
 
 - Design the following database schema containing three tables:
+
 ![database schema](demos/12-MySQL_02-Homework_Assets_schema.png)
 
 - Command Line Application Demo:
