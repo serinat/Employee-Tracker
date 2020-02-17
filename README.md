@@ -4,9 +4,8 @@
 
 ## Instructions/Demos
 
-<<<<<<< HEAD
-=======
-- ![Design the following database schema containing three tables:](demos/12-MySQL_02-Homework_Assets_schema.png)
+- Design the following database schema containing three tables:
+![database schema](demos/12-MySQL_02-Homework_Assets_schema.png)
 
-- ![Command-line application demo:](demos/12-MySQL_02-Homework_Assets_employee-tracker (1).gif)
->>>>>>> 352c601eb7be6b2b2ada2be0d60d49cdf18de537
+- Command Line Application Demo:
+![demo](demos/demo.gif)
