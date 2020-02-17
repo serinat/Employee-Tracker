@@ -28,5 +28,5 @@ CREATE TABLE employees (
   PRIMARY KEY (id)
 );
 
-insert employees(first_name, last_name, role, role_id, manager_id)
+/*insert employees(first_name, last_name, role, role_id, manager_id)
 values ("Mike", "Chan", "Lead Engineer", 1, 1);

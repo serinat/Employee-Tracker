@@ -71,7 +71,7 @@ function viewAllEmployees() {
 //View All Employees by Department
 
 function viewEmployeeByDepartment() {
-  var query = "SELECT * FROM employees inner join role on employees.role_id WHERE employees.role_id = 1";
+  var query = "SELECT * FROM employees inner join role on employees.role_id";
     connection.query(query, function (err, results) {
         if (err) throw (err);
 
@@ -177,14 +177,14 @@ function selectRemoveEmployee() {
 
 
 function removeEmployee(employee) {
-  connection.query("DELETE FROM employees WHERE first_name='?'", function (err, results) {
+  connection.query("DELETE FROM employees WHERE first_name='Tom'", function (err, results) {
       if (err) throw err;
       start();
   })
 
 }
 function updateEmployeeRole() {
-  connection.query("UPDATE FROM employees", function (err, results) {
+  connection.query("SELECT title FROM role", function (err, results) {
       if (err) throw err;
       inquirer
           .prompt({
